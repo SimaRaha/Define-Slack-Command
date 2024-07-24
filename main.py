@@ -4,6 +4,13 @@ import functions_framework
 
 from markupsafe import escape
 
+# Local dictionary to store terms and their definitions
+definitions = {
+    'ccv': 'Center for Computation and Visualization',
+    'python': 'A high-level programming language.','bu': 'brown university',
+    'json': 'JavaScript Object Notation, a lightweight data interchange format.',
+    # Add more terms and definitions as needed
+}
 @functions_framework.http
 def hello_http(request):
     """HTTP Cloud Function.
